@@ -42,7 +42,6 @@ MiniLibX library. You can use either the version available on the school machine
 
 ## Usage
 
-MAke sure you have Xquartz installed in your machine.
 ```
 Clone the repository.
 Make sure you have Xquartz installed in your machine.
