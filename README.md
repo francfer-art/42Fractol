@@ -42,8 +42,10 @@ MiniLibX library. You can use either the version available on the school machine
 
 ## Usage
 
+MAke sure you have Xquartz installed in your machine.
 ```
 Clone the repository.
+Make sure you have Xquartz installed in your machine.
 Compile the program using the provided Makefile.
 Run the executable with optional parameters to specify the type of fractal to display and additional rendering options.
 ```
