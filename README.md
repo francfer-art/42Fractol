@@ -84,6 +84,14 @@ Dynamic Zoom: The zoom follows the actual mouse position, providing a more intui
 View Movement: Navigate through the fractals by pressing the arrow keys to move the view.
 Color Range Shift: The color range dynamically shifts, enhancing the visual appeal of the fractals.
 
+```bash
+make bonus
+./fractol_bonus [fractal_type]
+```
+```
+Replace [fractal_type] with the type of fractal to display (e.g., burning, rose, newton).
+```
+
 ## Contributing
 
 Contributions are welcome! If you have improvements or additional features to suggest, please open an issue or submit a pull request. Follow the Contribution Guidelines for more details.
