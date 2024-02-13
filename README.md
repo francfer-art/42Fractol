@@ -1,4 +1,6 @@
-![Banner](https://raw.githubusercontent.com/15Galan/42_project-readmes/master/banners/cursus/projects/fract-ol-dark.png)
+<a href="https://github.com/francfer-art/42Fractol">
+  <img src ="https://raw.githubusercontent.com/15Galan/42_project-readmes/master/banners/cursus/projects/fract-ol-dark.png")>
+</a>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mcombeau/mcombeau/main/42_badges/fract-olm.png" alt="Fractol Logo">
