@@ -11,11 +11,12 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features](#overview)
-- [Requirements](#requirements)
-- [Additional Instructions](#additional-instructions)
+- [Features](#features)
+- [Prerequisites](#Prerequisites)
+- [Usage](#Usage)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
+- [Avaliable Parameters](#avaliable-parameters)
 - [Bonus](#bonus)
 - [Contributing](#contributing)
 - [License](#license)
