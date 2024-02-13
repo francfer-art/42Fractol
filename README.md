@@ -22,110 +22,66 @@
 
 ## Introduction
 
-Welcome to get_next_line! This project aims to provide a function that reads a line from a file descriptor, one line at a time, handling various scenarios and edge cases.
+Fract'ol is a project in Computer Graphics focusing on rendering fractals using the MiniLibX library. This program allows users to explore and visualize the Mandelbrot set and the Julia set, with options to customize the Julia set by passing different parameters.
 
-## Overview
-
-The get_next_line function allows you to read text files or input from the standard input (stdin) and returns the line that was read. It handles repeated calls (e.g., using a loop) to read the text file, ensuring that each call retrieves the next line.
-
-## Requirements
-
-Here are the key requirements for the get_next_line function:
+## Features
 
 ```
-Repeated calls to get_next_line() should let you read the text file pointed to by the file descriptor, one line at a time.
-The function should return the line that was read. If there is nothing else to read or if an error occurred, it should return NULL.
-Ensure that the function works as expected both when reading a file and when reading from the standard input (stdin).
-The returned line should include the terminating \n character, except if the end of the file was reached and does not end with a \n character.
-Your header file get_next_line.h must contain at least the prototype of the get_next_line() function.
-Add all the necessary helper functions in the get_next_line_utils.c file.
-```
-## Additional Instructions
-
-Here are some additional instructions for compiling and handling the project:
-
-```
-To define the buffer size for read(), add the option -D BUFFER_SIZE=n to your compiler call, where n is the buffer size value.
-The buffer size value will be modified by your peer-evaluators and the Moulinette for testing purposes.
-You must be able to compile this project with and without the -D BUFFER_SIZE flag in addition to the usual flags.
-The function has undefined behavior if the file pointed to by the file descriptor changed since the last call, whereas read() didn’t reach the end of the file.
-The function also has undefined behavior when reading a binary file. However, you can implement a logical way to handle this behavior if you want to.
+Renders the Mandelbrot set and the Julia set.
+Zoom in and out using the mouse wheel, allowing exploration within the limits of the computer.
+Creates different Julia sets by passing parameters through the command line.
+Smooth window management, including switching between windows and minimizing.
+Provides a clean exit when pressing ESC or clicking on the window's close button.
+Utilizes colors to represent the depth of each fractal, with options for psychedelic effects.
 ```
 
-## Getting Started
+## Prerequisites
 
-To use Libft in your project, follow these steps:
-
-1. Clone the repository:
-
-```bash
-https://github.com/francfer-art/42GNL.git
-```
-
-3. Include the library in your project:
-
-```c
-    #include get_next_line.h
-```
-
-4. You will compile your code as follows, where a buffer size of 42 is used as an example:
-
-```bash
-    gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 <files>.c
-```
+MiniLibX library. You can use either the version available on the school machines or install it using its sources.
 
 ## Usage
 
-Once the library is successfully integrated into your project, you can start using the functions in your code. Refer to the Libft Wiki for detailed documentation on each function.
-
-```c
-#include <stdio.h>
-#include <fcntl.h>
-#include "get_next_line.h"
-
-int main(void)
-{
-    int fd;
-    char *line;
-
-    // Open a file for reading
-    fd = open("example.txt", O_RDONLY);
-    if (fd < 0)
-    {
-        perror("Error opening file");
-        return 1;
-    }
-
-    // Read lines from the file using get_next_line
-    while ((line = get_next_line(fd)) != NULL)
-    {
-        printf("%s\n", line);
-        free(line); // Free the memory allocated by get_next_line
-    }
-
-    // Close the file descriptor
-    close(fd);
-
-    return 0;
-}
-
-
+```
+Clone the repository.
+Compile the program using the provided Makefile.
+Run the executable with optional parameters to specify the type of fractal to display and additional rendering options.
 ```
 
-## Bonus
+## Avaliable Parameters
 
+If no parameter is provided or if the parameter is invalid, the program displays a list of available parameters and exits properly.
+Additional parameters can be used as rendering options.
 
-Bonus Part: Enhanced get_next_line()
+## Usage Example
 
-This bonus part challenges you to enhance the get_next_line() function by implementing it using only one static variable. Additionally, your enhanced get_next_line() should be capable of managing multiple file descriptors simultaneously. This means that the function should seamlessly handle reading from different file descriptors without losing the reading thread of each file descriptor or returning a line from another file descriptor.
+```bash
+make
+./fractol [fractal_type] [rendering_options]
+```
+```
+Replace [fractal_type] with the type of fractal to display (e.g., mandelbrot, julia).
+Replace [rendering_options] with any additional rendering options (optional).
+```
 
-Here are the requirements for the bonus part:
+## Controls ![image](https://github.com/francfer-art/42Fractol/assets/147909491/8627241f-806d-44da-a44a-93ded2c00ddd)
 
-Develop get_next_line() using only one static variable.
-Ensure that your get_next_line() function can manage multiple file descriptors at the same time.
-For instance, if you can read from file descriptors 3, 4, and 5, your function should be able to read from a different file descriptor per call without losing the reading thread of each file descriptor or returning a line from another file descriptor. This implies that you should be able to call get_next_line() to read from file descriptor 3, then 4, then 5, and so forth, seamlessly switching between file descriptors as needed.
+```Menu
+Use the mouse wheel to zoom in and out.
+Press ESC to close the window and quit the program cleanly.
+Click on the close button on the window's frame to close the window and quit the program cleanly.
+W / ⭡: Up
+S / ⭣: Down
+A / ⭠: Left
+D / ⭢: Right
++ / -: Increase / Decrease Rendering Iterations
+```
 
-This bonus part challenges your creativity and coding skills to implement a robust and efficient version of get_next_line() that can handle multiple file descriptors concurrently while maintaining a clean and manageable codebase. Good luck!
+## Bonus Features
+
+Additional Fractal: You can explore more than just the Mandelbrot and Julia sets with over a hundred different types of fractals available online.
+Dynamic Zoom: The zoom follows the actual mouse position, providing a more intuitive exploration experience.
+View Movement: Navigate through the fractals by pressing the arrow keys to move the view.
+Color Range Shift: The color range dynamically shifts, enhancing the visual appeal of the fractals.
 
 ## Contributing
 
