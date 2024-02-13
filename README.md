@@ -63,9 +63,9 @@ Replace [fractal_type] with the type of fractal to display (e.g., mandelbrot, ju
 Replace [rendering_options] with any additional rendering options (optional).
 ```
 
-## Controls ![image](https://github.com/francfer-art/42Fractol/assets/147909491/8627241f-806d-44da-a44a-93ded2c00ddd)
+## Controls
 
-```Menu
+```
 Use the mouse wheel to zoom in and out.
 Press ESC to close the window and quit the program cleanly.
 Click on the close button on the window's frame to close the window and quit the program cleanly.
@@ -78,7 +78,7 @@ D / ⭢: Right
 
 ## Bonus Features
 
-Additional Fractal: You can explore more than just the Mandelbrot and Julia sets with over a hundred different types of fractals available online.
+Additional Fractal: You can explore more than just the Mandelbrot and Julia sets with over a hundred different types of fractals available online. In this case i added burning, rose and newton sets!
 Dynamic Zoom: The zoom follows the actual mouse position, providing a more intuitive exploration experience.
 View Movement: Navigate through the fractals by pressing the arrow keys to move the view.
 Color Range Shift: The color range dynamically shifts, enhancing the visual appeal of the fractals.
