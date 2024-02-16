@@ -80,6 +80,7 @@ S / ⭣: Down
 A / ⭠: Left
 D / ⭢: Right
 + / -: Increase / Decrease Rendering Iterations
+E : Enable / Disable Cursor Julia Tracking
 ```
 
 ## Bonus Features
