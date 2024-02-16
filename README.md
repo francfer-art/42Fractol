@@ -69,8 +69,7 @@ Replace [fractal_type] with the type of fractal to display (e.g., mandelbrot, ju
 Replace [rendering_options] with any additional rendering options (optional).
 ```
 
-## Controls
-
+## Controls 🕹
 ```
 Use the mouse wheel to zoom in and out.
 Press ESC to close the window and quit the program cleanly.
