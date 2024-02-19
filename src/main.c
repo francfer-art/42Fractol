@@ -6,7 +6,7 @@
 /*   By: francfer <francfer@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 16:36:04 by francfer          #+#    #+#             */
-/*   Updated: 2024/01/29 11:27:53 by francfer         ###   ########.fr       */
+/*   Updated: 2024/02/16 18:07:36 by francfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,15 @@ static void	init_render_loop(t_fractal fractal)
 	fractal_render(&fractal);
 	mlx_loop(fractal.mlx_connection);
 }
+void leaks()
+{
+	system("leaks fractol");
+}
 
 int	main(int args, char **argv)
 {
 	t_fractal	fractal_map;
-
+	atexit(leaks);
 	if (args == 2 && !ft_strcmp(argv[1], "mandelbrot"))
 	{
 		fractal_map.fractal_name = argv[1];

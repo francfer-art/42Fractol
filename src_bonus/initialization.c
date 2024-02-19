@@ -24,7 +24,7 @@ void	data_init(t_fractal *fractal)
 	fractal->escape_val = 4;
 	fractal->iterations = 10;
 	fractal->move_x = 0.0;
-	fractal->move_x = 0.0;
+	fractal->move_y = 0.0;
 	fractal->zoom = 1;
 	fractal->active = 1;
 }
