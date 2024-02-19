@@ -22,6 +22,7 @@
 - [Usage](#usage)
 - [Avaliable Parameters](#avaliable-parameters)
 - [Bonus](#bonus)
+- [Threads](#threads)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -96,6 +97,10 @@ make bonus
 ```
 Replace [fractal_type] with the type of fractal to display (e.g., burning, rose, newton).
 ```
+
+## Threads
+
+
 
 ## Contributing
 
