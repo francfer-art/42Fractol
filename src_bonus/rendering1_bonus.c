@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rendering1.c                                       :+:      :+:    :+:   */
+/*   rendering1_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: francfer <francfer@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 1724/01/16 17:06:41 by francfer          #+#    #+#             */
-/*   Updated: 2024/01/31 12:45:17 by francfer         ###   ########.fr       */
+/*   Updated: 2024/02/19 11:51:58 by francfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "fractol_bonus.h"
 
 void	handle_pixel_burning(t_complex c, int x, int y, t_fractal *fractal)
 {

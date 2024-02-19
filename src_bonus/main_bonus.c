@@ -6,11 +6,11 @@
 /*   By: francfer <francfer@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/20 17:28:29 by francfer          #+#    #+#             */
-/*   Updated: 2024/01/31 12:33:03 by francfer         ###   ########.fr       */
+/*   Updated: 2024/02/19 11:51:45 by francfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "fractol_bonus.h"
 
 static void	error_message_bonus(int fd)
 {

@@ -6,7 +6,7 @@
 #    By: francfer <francfer@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/10 16:36:22 by francfer          #+#    #+#              #
-#    Updated: 2024/01/31 11:52:39 by francfer         ###   ########.fr        #
+#    Updated: 2024/02/19 11:52:45 by francfer         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,10 +21,9 @@ OBJ_DIR = obj
 OBJ_BONUS_DIR = obj_bonus
 FILES = events.c initialization.c main.c math_utils.c rendering.c rendering1.c \
 utils.c
-FILES_BONUS = events.c initialization.c main_bonus.c math_utils.c rendering.c rendering1.c \
-utils.c
+FILES_BONUS = events_bonus.c initialization_bonus.c main_bonus.c \
+math_utils_bonus.c rendering_bonus.c rendering1_bonus.c utils_bonus.c
 SOURCES = $(FILES:%=$(SRC_DIR)/%)
-SOURCES_BONUS = $(FILES:%=$(SRC_BONUS)/%)
 OBJECTS = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SOURCES))
 SOURCES_BONUS = $(FILES_BONUS:%=$(SRC_BONUS)/%)
 OBJECTS_BONUS = $(patsubst $(SRC_BONUS)/%.c, $(OBJ_BONUS_DIR)/%.o, $(SOURCES_BONUS))
