@@ -100,7 +100,8 @@ Replace [fractal_type] with the type of fractal to display (e.g., burning, rose,
 
 ## Threads
 
-
+Threads are virtual sequences of instructions given to a CPU. Multithreading allows for better utilization of available system resources by dividing tasks into separate threads and running them in parallel. Hyperthreading further increases performance by allowing processors to execute two threads concurrently.
+Now we are rendering the fractal image using 12 threads instead of just 1!
 
 ## Contributing
 
